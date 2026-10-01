@@ -19,6 +19,7 @@ This repository contains Object-Oriented Programming (OOPS) lab experiments in J
 9. **Ex9_StringMenu.java** - String Operations using ArrayList
 10. **Ex10_ListFiles.java** - File Handling (List files in directory)
 11. **Ex11_StudentManagementApp.java** - CRUD Application using JavaFX and JDBC
+12. **Ex12_PersonalExpenseTracker.java** - Personal Expense Tracker (Java + MySQL + JDBC)
 
 ## Notes
 - **Ex2**: Use the folder structure under `Ex2/`. Compile and run from the `Ex2` directory:
@@ -27,3 +28,15 @@ This repository contains Object-Oriented Programming (OOPS) lab experiments in J
   java Main
   ```
 - **Ex11** requires MySQL database setup, JDBC driver, and JavaFX modules.
+- **Ex12** requires MySQL database `expense_tracker` with table:
+  ```sql
+  CREATE DATABASE expense_tracker;
+  USE expense_tracker;
+  CREATE TABLE expenses (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      title VARCHAR(100),
+      category VARCHAR(50),
+      amount DOUBLE,
+      expense_date DATE
+  );
+  ```
